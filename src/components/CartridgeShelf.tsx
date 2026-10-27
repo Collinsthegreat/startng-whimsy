@@ -5,10 +5,10 @@ import { playShekere } from '../audio';
 import {
   CompassArt,
   TownPlazaArt,
+  SpaceArt,
   WordGridArt,
-  DanfoBusArt,
-  WhotCardArt,
-  AyoBoardArt,
+  RacingArt,
+  TempleArt,
 } from './Icons';
 
 interface CartridgeShelfProps {
@@ -41,14 +41,14 @@ export const CartridgeShelf: React.FC<CartridgeShelfProps> = ({ onSelectCartridg
         return <CompassArt />;
       case 'hangout':
         return <TownPlazaArt />;
+      case 'space':
+        return <SpaceArt />;
       case 'wordle':
         return <WordGridArt />;
-      case 'danfo':
-        return <DanfoBusArt />;
-      case 'whot':
-        return <WhotCardArt />;
-      case 'ayo':
-        return <AyoBoardArt />;
+      case 'racing':
+        return <RacingArt />;
+      case 'temple':
+        return <TempleArt />;
     }
   };
 

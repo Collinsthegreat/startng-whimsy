@@ -5,7 +5,7 @@ export interface GameCartridge {
   creator: string;
   color: string;
   url: string;
-  artType: 'roots' | 'hangout' | 'wordle' | 'danfo' | 'whot' | 'ayo';
+  artType: 'roots' | 'hangout' | 'space' | 'wordle' | 'racing' | 'temple';
   legendary?: boolean;
 }
 

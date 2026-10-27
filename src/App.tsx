@@ -48,15 +48,16 @@ export default function App() {
 
       <main className="container">
         <section className="hero-section">
+          {/* Start.ng Official Brand Headline */}
           <h1 className="hero-headline">
-            Play Naija <mark>games</mark>
+            Good vibes. <mark>Good games.</mark>
           </h1>
 
           {/* Single Star Storyteller Capsule: Mascot + Bronze Head + 5-Word Riddle */}
           <HeroRiddle onPlayRoots={handlePlayRootsDirect} />
         </section>
 
-        {/* 3D Tactile Cartridge Shelf (6 Distinct Cartridges) */}
+        {/* 3D Tactile Cartridge Shelf across Diverse Community Genres */}
         <CartridgeShelf onSelectCartridge={handleSelectCartridge} />
       </main>
 
@@ -69,7 +70,7 @@ export default function App() {
 
       <footer className="footer">
         <div className="container">
-          <p>© 2026 Start.ng • Built for Naija & African indie games</p>
+          <p>© 2026 Start.ng • Free browser games made by the community</p>
         </div>
       </footer>
     </div>

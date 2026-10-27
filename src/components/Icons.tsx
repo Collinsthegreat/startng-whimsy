@@ -50,8 +50,9 @@ export const ResetIcon: React.FC<{ size?: number }> = ({ size = 16 }) => (
   </svg>
 );
 
-/* Cartridge Artwork SVGs */
+/* Cartridge Artwork SVGs across diverse Start.ng genres */
 
+// ROOTS 3D (Heritage & Geography)
 export const CompassArt: React.FC = () => (
   <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="60" height="60" rx="12" fill="#008751" fillOpacity="0.15" />
@@ -62,6 +63,7 @@ export const CompassArt: React.FC = () => (
   </svg>
 );
 
+// THE HANGOUT (Social MMO / Multiplayer Park)
 export const TownPlazaArt: React.FC = () => (
   <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="60" height="60" rx="12" fill="#346fdf" fillOpacity="0.15" />
@@ -72,6 +74,21 @@ export const TownPlazaArt: React.FC = () => (
   </svg>
 );
 
+// COSMIC DASH (Space & Sci-Fi)
+export const SpaceArt: React.FC = () => (
+  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="60" height="60" rx="12" fill="#4b7bec" fillOpacity="0.15" />
+    {/* Rocket */}
+    <path d="M30 12C26 20 23 28 23 37H37C37 28 34 20 30 12Z" fill="#d8fd71" stroke="#292a23" strokeWidth="2.5" />
+    <polygon points="23 37 16 42 20 34" fill="#eb5757" stroke="#292a23" strokeWidth="2" />
+    <polygon points="37 37 44 42 40 34" fill="#eb5757" stroke="#292a23" strokeWidth="2" />
+    <circle cx="30" cy="24" r="3" fill="#292a23" />
+    <circle cx="44" cy="18" r="1.5" fill="#f5a623" />
+    <circle cx="16" cy="20" r="1.5" fill="#f5a623" />
+  </svg>
+);
+
+// WORDLE NAIJA (Brainy / Words)
 export const WordGridArt: React.FC = () => (
   <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="60" height="60" rx="12" fill="#f5a623" fillOpacity="0.15" />
@@ -82,37 +99,26 @@ export const WordGridArt: React.FC = () => (
   </svg>
 );
 
-export const DanfoBusArt: React.FC = () => (
+// NEON DRIFT (Racing & Driving)
+export const RacingArt: React.FC = () => (
   <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="60" height="60" rx="12" fill="#f5c518" fillOpacity="0.15" />
-    <rect x="12" y="18" width="36" height="22" rx="4" fill="#f5c518" stroke="#292a23" strokeWidth="2.5" />
-    {/* Black stripes characteristic of Lagos Danfo */}
-    <line x1="12" y1="26" x2="48" y2="26" stroke="#292a23" strokeWidth="2.5" />
-    <line x1="12" y1="31" x2="48" y2="31" stroke="#292a23" strokeWidth="2.5" />
-    <circle cx="20" cy="42" r="4.5" fill="#292a23" />
-    <circle cx="40" cy="42" r="4.5" fill="#292a23" />
+    <rect width="60" height="60" rx="12" fill="#a55eea" fillOpacity="0.15" />
+    {/* Racing car profile */}
+    <path d="M12 36L18 24H38L48 36H12Z" fill="#a55eea" stroke="#292a23" strokeWidth="2.5" />
+    <path d="M22 24L26 18H34L36 24H22Z" fill="#d8fd71" stroke="#292a23" strokeWidth="2" />
+    <circle cx="20" cy="40" r="4.5" fill="#292a23" />
+    <circle cx="40" cy="40" r="4.5" fill="#292a23" />
   </svg>
 );
 
-export const WhotCardArt: React.FC = () => (
+// TEMPLE ESCAPE (Ancient Ruins & Catch/Dodge)
+export const TempleArt: React.FC = () => (
   <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="60" height="60" rx="12" fill="#eb5757" fillOpacity="0.15" />
-    <rect x="15" y="14" width="20" height="28" rx="3" fill="#fff" stroke="#292a23" strokeWidth="2" transform="rotate(-8 15 14)" />
-    <rect x="25" y="18" width="20" height="28" rx="3" fill="#eb5757" stroke="#292a23" strokeWidth="2" transform="rotate(6 25 18)" />
-    <polygon points="35 24 37 29 42 29 38 32 40 37 35 34 30 37 32 32 28 29 33 29" fill="#d8fd71" stroke="#292a23" strokeWidth="1.5" />
-  </svg>
-);
-
-export const AyoBoardArt: React.FC = () => (
-  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="60" height="60" rx="12" fill="#a0662f" fillOpacity="0.15" />
-    <rect x="12" y="20" width="36" height="20" rx="6" fill="#a0662f" stroke="#292a23" strokeWidth="2.5" />
-    {/* 6 Mancala Pits */}
-    <circle cx="18" cy="26" r="3" fill="#292a23" />
-    <circle cx="30" cy="26" r="3" fill="#292a23" />
-    <circle cx="42" cy="26" r="3" fill="#292a23" />
-    <circle cx="18" cy="34" r="3" fill="#292a23" />
-    <circle cx="30" cy="34" r="3" fill="#292a23" />
-    <circle cx="42" cy="34" r="3" fill="#292a23" />
+    <rect width="60" height="60" rx="12" fill="#278546" fillOpacity="0.15" />
+    {/* Stepped Pyramid / Temple */}
+    <rect x="12" y="38" width="36" height="8" rx="2" fill="#278546" stroke="#292a23" strokeWidth="2" />
+    <rect x="18" y="30" width="24" height="8" rx="2" fill="#d8fd71" stroke="#292a23" strokeWidth="2" />
+    <rect x="24" y="22" width="12" height="8" rx="2" fill="#f5a623" stroke="#292a23" strokeWidth="2" />
+    <polygon points="30 14 34 22 26 22" fill="#eb5757" stroke="#292a23" strokeWidth="1.5" />
   </svg>
 );
