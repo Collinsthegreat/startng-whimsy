@@ -5,10 +5,10 @@ import { playShekere } from '../audio';
 import {
   CompassArt,
   TownPlazaArt,
-  SpaceArt,
-  WordGridArt,
+  DanfoBusArt,
+  WhotCardArt,
   RacingArt,
-  TempleArt,
+  SpaceArt,
 } from './Icons';
 
 interface CartridgeShelfProps {
@@ -41,14 +41,14 @@ export const CartridgeShelf: React.FC<CartridgeShelfProps> = ({ onSelectCartridg
         return <CompassArt />;
       case 'hangout':
         return <TownPlazaArt />;
-      case 'space':
-        return <SpaceArt />;
-      case 'wordle':
-        return <WordGridArt />;
+      case 'danfo':
+        return <DanfoBusArt />;
+      case 'whot':
+        return <WhotCardArt />;
       case 'racing':
         return <RacingArt />;
-      case 'temple':
-        return <TempleArt />;
+      case 'space':
+        return <SpaceArt />;
     }
   };
 
@@ -56,7 +56,7 @@ export const CartridgeShelf: React.FC<CartridgeShelfProps> = ({ onSelectCartridg
     <section className="shelf-section" id="arcade">
       <div className="section-head">
         <h2 className="section-title">Arcade shelf</h2>
-        <span className="section-count">{FEATURED_GAMES.length} cartridges</span>
+        <span className="section-count">{FEATURED_GAMES.length} featured cartridges</span>
       </div>
 
       <div className="cartridge-grid">
@@ -84,7 +84,7 @@ export const CartridgeShelf: React.FC<CartridgeShelfProps> = ({ onSelectCartridg
               <span className="notch-line" />
             </div>
 
-            {/* Cartridge Art Label */}
+            {/* Cartridge Art Panel */}
             <div className="cartridge-art-panel">
               <div className="cartridge-glyph-box">
                 {renderGameArt(game.artType)}
@@ -113,6 +113,18 @@ export const CartridgeShelf: React.FC<CartridgeShelfProps> = ({ onSelectCartridg
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Exit to full platform games directory */}
+      <div className="shelf-exit-row">
+        <a
+          href="https://start.ng/games"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-chunky btn-shelf-all"
+        >
+          See all 180+ games on start.ng →
+        </a>
       </div>
     </section>
   );

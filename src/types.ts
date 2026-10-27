@@ -5,11 +5,9 @@ export interface GameCartridge {
   creator: string;
   color: string;
   url: string;
-  artType: 'roots' | 'hangout' | 'space' | 'wordle' | 'racing' | 'temple';
+  artType: 'roots' | 'hangout' | 'danfo' | 'whot' | 'racing' | 'space';
   legendary?: boolean;
 }
-
-export type MascotHat = 'fila' | 'gele' | 'cap' | 'crown' | 'shades';
 
 export interface RiddleOption {
   id: string;

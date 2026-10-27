@@ -36,13 +36,6 @@ export const MoonIcon: React.FC<{ size?: number }> = ({ size = 18 }) => (
   </svg>
 );
 
-export const FlagPinIcon: React.FC<{ size?: number }> = ({ size = 20 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" fill="#008751" />
-    <line x1="4" y1="22" x2="4" y2="15" />
-  </svg>
-);
-
 export const ResetIcon: React.FC<{ size?: number }> = ({ size = 16 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
     <polyline points="1 4 1 10 7 10" />
@@ -50,11 +43,11 @@ export const ResetIcon: React.FC<{ size?: number }> = ({ size = 16 }) => (
   </svg>
 );
 
-/* Cartridge Artwork SVGs across diverse Start.ng genres */
+/* Cartridge Artwork SVGs for Real Games */
 
-// ROOTS 3D (Heritage & Geography)
+// ROOTS 3D (Collins Nwajagu)
 export const CompassArt: React.FC = () => (
-  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="56" height="56" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="60" height="60" rx="12" fill="#008751" fillOpacity="0.15" />
     <circle cx="30" cy="30" r="22" stroke="#292a23" strokeWidth="2.5" />
     <polygon points="30 14 35 28 30 25 25 28" fill="#d8fd71" stroke="#292a23" strokeWidth="2" />
@@ -63,9 +56,9 @@ export const CompassArt: React.FC = () => (
   </svg>
 );
 
-// THE HANGOUT (Social MMO / Multiplayer Park)
+// THE HANGOUT (Start.ng)
 export const TownPlazaArt: React.FC = () => (
-  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="56" height="56" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="60" height="60" rx="12" fill="#346fdf" fillOpacity="0.15" />
     <path d="M12 44V26L22 18L32 26V44H12Z" fill="#346fdf" stroke="#292a23" strokeWidth="2.5" />
     <path d="M32 44V22L42 14L50 20V44H32Z" fill="#d8fd71" stroke="#292a23" strokeWidth="2.5" />
@@ -74,36 +67,32 @@ export const TownPlazaArt: React.FC = () => (
   </svg>
 );
 
-// COSMIC DASH (Space & Sci-Fi)
-export const SpaceArt: React.FC = () => (
-  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="60" height="60" rx="12" fill="#4b7bec" fillOpacity="0.15" />
-    {/* Rocket */}
-    <path d="M30 12C26 20 23 28 23 37H37C37 28 34 20 30 12Z" fill="#d8fd71" stroke="#292a23" strokeWidth="2.5" />
-    <polygon points="23 37 16 42 20 34" fill="#eb5757" stroke="#292a23" strokeWidth="2" />
-    <polygon points="37 37 44 42 40 34" fill="#eb5757" stroke="#292a23" strokeWidth="2" />
-    <circle cx="30" cy="24" r="3" fill="#292a23" />
-    <circle cx="44" cy="18" r="1.5" fill="#f5a623" />
-    <circle cx="16" cy="20" r="1.5" fill="#f5a623" />
+// DANFO DEFENSE (emmyanz)
+export const DanfoBusArt: React.FC = () => (
+  <svg width="56" height="56" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="60" height="60" rx="12" fill="#f5c518" fillOpacity="0.15" />
+    <rect x="12" y="18" width="36" height="22" rx="4" fill="#f5c518" stroke="#292a23" strokeWidth="2.5" />
+    <line x1="12" y1="26" x2="48" y2="26" stroke="#292a23" strokeWidth="2.5" />
+    <line x1="12" y1="31" x2="48" y2="31" stroke="#292a23" strokeWidth="2.5" />
+    <circle cx="20" cy="42" r="4.5" fill="#292a23" />
+    <circle cx="40" cy="42" r="4.5" fill="#292a23" />
   </svg>
 );
 
-// WORDLE NAIJA (Brainy / Words)
-export const WordGridArt: React.FC = () => (
-  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="60" height="60" rx="12" fill="#f5a623" fillOpacity="0.15" />
-    <rect x="14" y="14" width="13" height="13" rx="3" fill="#d8fd71" stroke="#292a23" strokeWidth="2" />
-    <rect x="33" y="14" width="13" height="13" rx="3" fill="#f5a623" stroke="#292a23" strokeWidth="2" />
-    <rect x="14" y="33" width="13" height="13" rx="3" fill="#292a23" />
-    <rect x="33" y="33" width="13" height="13" rx="3" fill="#d8fd71" stroke="#292a23" strokeWidth="2" />
+// WHOT (Hamzat)
+export const WhotCardArt: React.FC = () => (
+  <svg width="56" height="56" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="60" height="60" rx="12" fill="#eb5757" fillOpacity="0.15" />
+    <rect x="15" y="14" width="20" height="28" rx="3" fill="#fff" stroke="#292a23" strokeWidth="2" transform="rotate(-8 15 14)" />
+    <rect x="25" y="18" width="20" height="28" rx="3" fill="#eb5757" stroke="#292a23" strokeWidth="2" transform="rotate(6 25 18)" />
+    <polygon points="35 24 37 29 42 29 38 32 40 37 35 34 30 37 32 32 28 29 33 29" fill="#d8fd71" stroke="#292a23" strokeWidth="1.5" />
   </svg>
 );
 
-// NEON DRIFT (Racing & Driving)
+// NEON DRIFT (Miracle)
 export const RacingArt: React.FC = () => (
-  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="56" height="56" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="60" height="60" rx="12" fill="#a55eea" fillOpacity="0.15" />
-    {/* Racing car profile */}
     <path d="M12 36L18 24H38L48 36H12Z" fill="#a55eea" stroke="#292a23" strokeWidth="2.5" />
     <path d="M22 24L26 18H34L36 24H22Z" fill="#d8fd71" stroke="#292a23" strokeWidth="2" />
     <circle cx="20" cy="40" r="4.5" fill="#292a23" />
@@ -111,14 +100,13 @@ export const RacingArt: React.FC = () => (
   </svg>
 );
 
-// TEMPLE ESCAPE (Ancient Ruins & Catch/Dodge)
-export const TempleArt: React.FC = () => (
-  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="60" height="60" rx="12" fill="#278546" fillOpacity="0.15" />
-    {/* Stepped Pyramid / Temple */}
-    <rect x="12" y="38" width="36" height="8" rx="2" fill="#278546" stroke="#292a23" strokeWidth="2" />
-    <rect x="18" y="30" width="24" height="8" rx="2" fill="#d8fd71" stroke="#292a23" strokeWidth="2" />
-    <rect x="24" y="22" width="12" height="8" rx="2" fill="#f5a623" stroke="#292a23" strokeWidth="2" />
-    <polygon points="30 14 34 22 26 22" fill="#eb5757" stroke="#292a23" strokeWidth="1.5" />
+// COSMIC DASH (Sabhayor)
+export const SpaceArt: React.FC = () => (
+  <svg width="56" height="56" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="60" height="60" rx="12" fill="#4b7bec" fillOpacity="0.15" />
+    <path d="M30 12C26 20 23 28 23 37H37C37 28 34 20 30 12Z" fill="#d8fd71" stroke="#292a23" strokeWidth="2.5" />
+    <polygon points="23 37 16 42 20 34" fill="#eb5757" stroke="#292a23" strokeWidth="2" />
+    <polygon points="37 37 44 42 40 34" fill="#eb5757" stroke="#292a23" strokeWidth="2" />
+    <circle cx="30" cy="24" r="3" fill="#292a23" />
   </svg>
 );
