@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { isAudioMuted, setAudioMuted, playShekere } from '../audio';
+import { SpeakerOnIcon, SpeakerOffIcon, SunIcon, MoonIcon } from './Icons';
 
 interface HeaderProps {
   onTriggerDot: () => void;
@@ -13,7 +14,7 @@ export const Header: React.FC<HeaderProps> = ({ onTriggerDot, dotDocked }) => {
   useEffect(() => {
     setMuted(isAudioMuted());
     const savedTheme = localStorage.getItem('startng-theme') as 'light' | 'dark' | null;
-    const initialTheme = savedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const initialTheme = savedTheme || 'light';
     setTheme(initialTheme);
     document.documentElement.dataset.theme = initialTheme;
   }, []);
@@ -38,43 +39,49 @@ export const Header: React.FC<HeaderProps> = ({ onTriggerDot, dotDocked }) => {
   return (
     <header className="header">
       <div className="container header-inner">
-        <div className="logo-wrap">
-          <div className="logo-badge">⚡</div>
-          <div className="logo-text">
-            <span>Start</span>
+        <a className="logo-wrap" href="#arcade" aria-label="Start.ng Home">
+          {/* Authentic Start.ng Mark: Rounded lime tile with charcoal play triangle */}
+          <svg width="34" height="34" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#d8fd71" stroke="#292a23" strokeWidth="4" />
+            <path d="M26 19.5v25c0 1.6 1.7 2.5 3 1.7l19.5-12.5c1.2-.8 1.2-2.6 0-3.4L29 17.8c-1.3-.8-3 .1-3 1.7z" fill="#292a23" />
+          </svg>
+
+          <span className="logo-text">
+            <b>start</b>
             {dotDocked ? (
               <span
                 className="logo-dot-trigger"
-                onClick={onTriggerDot}
-                title="Click me: Micro-Delight Easter Egg!"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onTriggerDot();
+                }}
                 role="button"
                 tabIndex={0}
+                aria-label="Interactive dot"
               />
             ) : (
-              <span style={{ display: 'inline-block', width: '13px' }} />
+              <span className="logo-dot-placeholder" />
             )}
-            <span>ng</span>
-          </div>
-        </div>
+            <span className="logo-ng">ng</span>
+          </span>
+        </a>
 
         <div className="header-actions">
           <button
             className="btn-chunky"
             onClick={toggleSound}
             aria-label={muted ? 'Unmute sound effects' : 'Mute sound effects'}
-            title={muted ? 'Click to enable authentic Nigerian percussion' : 'Mute SFX'}
           >
-            <span>{muted ? '🔇' : '🔊'}</span>
-            <span className="btn-label">{muted ? 'SFX: OFF' : 'SFX: ON'}</span>
+            {muted ? <SpeakerOffIcon size={16} /> : <SpeakerOnIcon size={16} />}
+            <span className="btn-label">{muted ? 'Muted' : 'Sound'}</span>
           </button>
 
           <button
             className="btn-chunky"
             onClick={toggleTheme}
-            aria-label="Toggle dark/light mode"
-            title="Toggle theme"
+            aria-label="Toggle dark and light theme"
           >
-            <span>{theme === 'light' ? '🌙' : '☀️'}</span>
+            {theme === 'light' ? <MoonIcon size={16} /> : <SunIcon size={16} />}
             <span className="btn-label">{theme === 'light' ? 'Dark' : 'Light'}</span>
           </button>
         </div>

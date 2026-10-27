@@ -3,12 +3,10 @@ export interface GameCartridge {
   title: string;
   subtitle: string;
   creator: string;
-  genre: string;
   color: string;
   url: string;
+  artType: 'roots' | 'hangout' | 'wordle' | 'danfo' | 'whot' | 'ayo';
   legendary?: boolean;
-  plays: string;
-  tags: string[];
 }
 
 export type MascotHat = 'fila' | 'gele' | 'cap' | 'crown' | 'shades';

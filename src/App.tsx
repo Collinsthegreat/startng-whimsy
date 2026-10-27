@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Header } from './components/Header';
 import { HeroRiddle } from './components/HeroRiddle';
-import { Mascot } from './components/Mascot';
 import { CartridgeShelf } from './components/CartridgeShelf';
 import { ConsoleSlot } from './components/ConsoleSlot';
 import { BouncingDot } from './components/BouncingDot';
@@ -22,7 +21,7 @@ export default function App() {
 
     setTimeout(() => {
       setInserting(false);
-    }, 600);
+    }, 550);
   };
 
   const handleLaunchGame = () => {
@@ -49,23 +48,15 @@ export default function App() {
 
       <main className="container">
         <section className="hero-section">
-          <div className="hero-pill-badge">
-            <span className="dot" />
-            <span>Interactive Micro-Arcade</span>
-          </div>
-
           <h1 className="hero-headline">
-            Play African & Nigerian <mark>Indie Games</mark>
+            Play Naija <mark>games</mark>
           </h1>
 
-          {/* 2-Second Playable Micro-Riddle */}
+          {/* Single Star Storyteller Capsule: Mascot + Bronze Head + 5-Word Riddle */}
           <HeroRiddle onPlayRoots={handlePlayRootsDirect} />
-
-          {/* Interactive Mascot Attire Swapper */}
-          <Mascot />
         </section>
 
-        {/* 3D Tactile Cartridge Shelf */}
+        {/* 3D Tactile Cartridge Shelf (6 Distinct Cartridges) */}
         <CartridgeShelf onSelectCartridge={handleSelectCartridge} />
       </main>
 
@@ -78,12 +69,7 @@ export default function App() {
 
       <footer className="footer">
         <div className="container">
-          <p>
-            <b>Start.ng Whimsical Showcase</b> — Designed for authentic human-agent playability & 2-second comprehension.
-          </p>
-          <p style={{ marginTop: '6px', fontSize: '0.8rem', opacity: 0.8 }}>
-            Featuring <b>ROOTS 3D: Naija Heritage</b> by Abuchi Collins Nwajagu.
-          </p>
+          <p>© 2026 Start.ng • Built for Naija & African indie games</p>
         </div>
       </footer>
     </div>

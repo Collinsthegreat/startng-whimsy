@@ -6,20 +6,17 @@
     <title>Start.ng Arcade — Play Nigerian & African Indie Games</title>
     <meta
       name="description"
-      content="Whimsical micro-arcade for Start.ng featuring 2-second playable cultural riddles, interactive mascot attire, and 3D tactile game cartridges including ROOTS 3D by Abuchi Collins Nwajagu."
+      content="Whimsical micro-arcade for Start.ng featuring 2-second playable cultural riddles, interactive mascot attire, and 3D tactile game cartridges."
     />
     <meta property="og:title" content="Start.ng Arcade — Play Nigerian & African Indie Games" />
     <meta property="og:description" content="2-second playable cultural micro-arcade with procedural Nigerian percussion and 3D retro cartridges." />
     <meta name="theme-color" content="#d8fd71" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23d8fd71'/%3E%3Cpath d='M18 4L8 18h7l-3 10 12-14h-7l4-10z' fill='%23292a23'/%3E%3C/svg%3E"
-    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <script>
       try {
         var saved = localStorage.getItem('startng-theme');
-        var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        var theme = saved || 'light';
+        document.documentElement.dataset.theme = theme;
       } catch (e) {
         document.documentElement.dataset.theme = 'light';
       }
